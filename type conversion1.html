@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Conversion</title>
+</head>
+<body>
+    <p>The String() method can convert a number to a string.</p>
+
+    <p id="de"></p>
+
+    <script>
+    let d = 203;
+    document.getElementById("de").innerHTML =
+    String(d) + "<br>" +
+    String(203) + "<br>" +
+    String(180 + 23);
+    </script> <hr>
+
+    <p>The toString() method converts a number to a string.</p>
+
+    <p id="demo1"></p>
+
+    <script>
+    let h = 400;
+    document.getElementById("demo1").innerHTML =
+    h.toString() + "<br>" +
+    (400).toString() + "<br>" +
+    (230 + 170).toString();
+    </script> <hr>
+    
+    <p id="demo4"></p>
+
+    <script>
+    document.getElementById("demo4").innerHTML =
+    (10 + null) + "<br>"  +
+    ("17" + null) + "<br>" +
+    ("60" + 2) + "<br>" +
+    ("7" - 2) + "<br>" +
+    ("10.6" * "2") + "<br>" +
+    ("108" / "6") + "<br>"
+    </script>
+</body>
+</html>
